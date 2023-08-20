@@ -1,0 +1,109 @@
+.container{
+    display: grid;
+    width: 600px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "main main" "else_1 else_2"
+    "else_3 else_3";
+    justify-items: stretch;
+    background-color: rgb(253, 218, 218);
+}
+.main_1{
+    display: grid;
+    grid-template-areas: "container aside";
+    width: 500px;
+    height: 400px;
+    background-color: rgb(243, 230, 114);
+    justify-items: center;
+    align-items: stretch;
+    text-align: center;
+}
+.main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: stretch;
+    background-color: rgb(253, 218, 218);
+}
+.else_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: stretch;
+    background-color: rgb(252, 211, 100);
+    margin: 10px;  
+}
+.else_2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: stretch;
+    background-color: rgb(252, 211, 100);
+    ;
+    margin: 10px;  
+}
+.else_3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: stretch;
+    background-color:rgb(252, 211, 100);
+    ;
+    margin: 10px;  
+}
+.header{
+    background-color: rgb(150, 185, 173);
+    width: 800px;
+    height: 70px;
+    text-align: center;
+}   
+.aside{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(70, 250, 139);
+    margin: 0px;
+    text-align: center;
+}
+.footer{
+    display: grid;
+    width: 800px;
+    height: 80px;
+    grid-template-areas: "footer1 footer2 footer3 footer4";
+    justify-content: space-around;
+    align-content: space-evenly;
+    background-color:rgb(150, 185, 173);
+}
+.footer_1{
+    width: 150px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+}
+.footer_2{
+    width: 150px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+}
+.footer_3{
+    width: 150px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+}
+.footer_4{
+    width: 150px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+}
